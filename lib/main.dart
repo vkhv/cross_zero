@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(new MyApp());
 
+
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -19,55 +21,26 @@ class MyApp extends StatelessWidget {
             crossAxisSpacing: 10.0,
             crossAxisCount: 3,
             children: <Widget>[
-              new Container( // grey box
-                  child:  new Center(
-                      child: new Text("0", style: new TextStyle(fontSize: 80.0),)),
-                  color: Colors.grey[300],
-              ),
-              new Container( // grey box
-                child:  new Center(
-                    child: new Text("X", style: new TextStyle(fontSize: 80.0),)),
-                color: Colors.grey[300],
-              ),
-              new Container( // grey box
-                child:  new Center(
-                    child: new Text("X", style: new TextStyle(fontSize: 80.0),)),
-                color: Colors.grey[300],
-              ),
-              new Container( // grey box
-                child:  new Center(
-                    child: new Text("0", style: new TextStyle(fontSize: 80.0),)),
-                color: Colors.grey[300],
-              ),
-              new Container( // grey box
-                child:  new Center(
-                    child: new Text("X", style: new TextStyle(fontSize: 80.0),)),
-                color: Colors.grey[300],
-              ),
-              new Container( // grey box
-                child:  new Center(
-                    child: new Text("X", style: new TextStyle(fontSize: 80.0),)),
-                color: Colors.grey[300],
-              ),
-              new Container( // grey box
-                child:  new Center(
-                    child: new Text("0", style: new TextStyle(fontSize: 80.0),)),
-                color: Colors.grey[300],
-              ),
-              new Container( // grey box
-                child:  new Center(
-                    child: new Text("X", style: new TextStyle(fontSize: 80.0),)),
-                color: Colors.grey[300],
-              ),
-              new Container( // grey box
-                child:  new Center(
-                    child: new Text("X", style: new TextStyle(fontSize: 80.0),)),
-                color: Colors.grey[300],
-              ),
+              getItem('X'),
+              getItem('X'),
+              getItem('X'),
+              getItem('X'),
+              getItem('X'),
+              getItem('X'),
+              getItem('X'),
+              getItem('X'),
+              getItem('X')
             ],
           ),
         ),
       ),
+    );
+  }
+  Widget getItem(String character) {
+    return new Container( // grey box
+      child: new Center(
+          child: new Text(character, style: new TextStyle(fontSize: 80.0),)),
+      color: Colors.grey[300],
     );
   }
 }
