@@ -1,6 +1,6 @@
 # cross_zero
 
-simple cross-zero game implementation
+Simple cross-zero game implementation buit with [flutter](https://flutter.io/)
 
 ![screen](https://github.com/vkhv/cross_zero/blob/master/Screen%20Shot%202018-03-01%20at%2023.28.48.png)
 
